@@ -6,7 +6,6 @@ import { FormProvider, useForm } from 'react-hook-form'
 import StepThree from './StepThree'
 import StepFour from './StepFour'
 import StepFive from './StepFive'
-import ProgressIndicator from './ProgressIndicator'
 
 type FormValues = {
   from: string
