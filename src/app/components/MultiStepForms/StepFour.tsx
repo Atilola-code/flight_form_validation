@@ -32,7 +32,7 @@ export default function StepFour({ onNext, onBack, currentStep }: StepFourProps)
 
 
  {/* Navigation buttons */}
-      <div className='mt-10 flex flex-col md:flex-row gap-4 justify-center'>
+      <div className='mt-10 flex flex-col md:flex-row gap-16 justify-center'>
         <button
           onClick={onBack}
           type='button'

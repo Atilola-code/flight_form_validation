@@ -108,11 +108,11 @@ export default function StepOne({ onNext, currentStep }: stepOneProps) {
         </div>
       </form>
 
-      <div className="mt-12">
+      <div className="mt-12 flex items-center justify-center">
         <button
           onClick={onNext}
           type="button"
-          className="flex text-center gap-4 bg-[#13B7CC] text-white px-8 py-3 rounded-2xl hover:text-[#13B7CC] hover:bg-white transition cursor-pointer"
+          className="flex items-center justify-center gap-4 bg-[#13B7CC] text-white px-8 py-3 rounded-2xl hover:text-[#13B7CC] hover:bg-white transition cursor-pointer"
         >
           Next
           <MdNavigateNext className="text-2xl text-white hover:text-[#13B7CC] cursor-pointer" />
