@@ -89,7 +89,7 @@ export default function StepOne({ onNext, currentStep }: stepOneProps) {
                 placeholder="Select date"
                 className="bg-white text-[#888] w-full p-3 rounded-2xl focus:outline-none "
               />
-              <FaRegClock className="absolute right-3 top-3/5 -translate-y-1/4 text-[#888} text-lg" />
+              <FaRegClock className="absolute right-3 top-3/5 -translate-y-1/4 text-[#888] text-lg" />
             </div>
             <div className="relative">
               <label className="flex text-lg gap-2 text-white/80">
@@ -102,7 +102,7 @@ export default function StepOne({ onNext, currentStep }: stepOneProps) {
                 placeholder="Select date"
                 className="bg-white text-[#888] w-full p-3 rounded-2xl focus:outline-none"
               />
-              <FaRegClock className="absolute right-3 top-3/5 -translate-y-1/4 text-[#888} text-lg" />
+              <FaRegClock className="absolute right-3 top-3/5 -translate-y-1/4 text-[#888] text-lg" />
             </div>
           </div>
         </div>
