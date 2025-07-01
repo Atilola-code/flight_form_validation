@@ -1,5 +1,7 @@
 import React from 'react'
 import ProgressIndicator from './ProgressIndicator'
+import { IoIosArrowBack } from 'react-icons/io'
+import { MdNavigateNext } from 'react-icons/md'
 
 
 type StepThreeProps = {
@@ -13,16 +15,14 @@ export default function StepThree({ onNext, onBack, currentStep }: StepThreeProp
       <h1 className='text-5xl text-white font-semibold'>Search Flights, Cheapest Flights</h1>
               <p className='text-white/60 font-light text-3xl mt-2 mb-16'>All the plane tickets you are looking for together!</p>
       
-              {/* Progress indicator */}
+             
               <ProgressIndicator currentStep={currentStep}/>
 
-              {/* Ticket Information Table */}
-      <div className="mt-10 rounded-2xl shadow py-4 md:py-8 md:px-6 overflow-x-auto">
-        <h2 className='text-xl md:text-2xl font-semibold bg-gray-600 text-gray-500 mb-6 text-center border-2 rounded-t-2xl border-collapse'>
-          Ticket Information
-        </h2>
-        
+      <div className="mt-10 rounded-2xl shadow  overflow-hidden border border-gray-600">
         <table className='w-full text-left border-collapse min-w-[700px]'>
+        <caption className='text-xl md:text-2xl font-semibold bg-gray-600 text-gray-400 mb-6 text-center w-full rounded-t-2xl py-2'>
+          Ticket Information
+        </caption>
           <thead>
             <tr className='border-b-2 border-white/40'>
               {['From', 'To', 'Type', 'Date', 'Price', 'Miles', 'Gift Miles'].map((title) => (
@@ -47,21 +47,21 @@ export default function StepThree({ onNext, onBack, currentStep }: StepThreeProp
       </div>
 
       {/* Navigation buttons */}
-      <div className='mt-10 flex flex-col md:flex-row gap-4 justify-center'>
+      <div className='mt-10 flex flex-col md:flex-row gap-16 justify-center'>
         <button
           onClick={onBack}
           type='button'
-          className='w-full md:w-auto px-8 py-3 bg-white text-[#13B7CC] border border-[#13B7CC] rounded-2xl hover:bg-[#13B7CC] hover:text-white transition'
+          className=' flex items-center px-8 py-3 gap-4 bg-white text-[#13B7CC] border border-[#13B7CC] rounded-2xl hover:bg-[#13B7CC] hover:text-white transition cursor-pointer'
         >
-          Back
+            <IoIosArrowBack className='text-lg '/> Back
         </button>
 
         <button
           onClick={onNext}
           type='button'
-          className='w-full md:w-auto px-8 py-3 bg-[#13B7CC] text-white rounded-2xl hover:bg-white hover:text-[#13B7CC] border border-[#13B7CC] transition'
-        >
-          Next
+          className=' flex items-center px-8 py-3 gap-4 bg-[#13B7CC] text-white rounded-2xl hover:bg-white hover:text-[#13B7CC] border border-[#13B7CC] transition cursor-pointer'
+        >Next
+        <MdNavigateNext className='text-lg' />
         </button>
       </div>
     </div>

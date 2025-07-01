@@ -46,10 +46,10 @@ export default function StepTwo({ onNext, onBack, currentStep}: StepTwoProps) {
         {/* Navigation buttons */}
 
         <div className='flex items-center justify-center gap-16'>
-            <button onClick={onBack} type='button' className='flex items-center gap-2 bg-white text-black px-6 py-3 rounded-2xl hover:bg-[#13B7CC] hover:text-white transition'>
+            <button onClick={onBack} type='button' className='flex items-center gap-4 bg-white text-black px-8 py-3 rounded-2xl hover:bg-[#13B7CC] hover:text-white transition cursor-pointer'>
                 <IoIosArrowBack className='text-lg '/> Before
             </button>
-            <button onClick={onNext} type='button' disabled={!selectedClass} className={`flex items-center gap-2 px-6 py-3 rounded-2xl transition ${selectedClass ? 'bg-white text-[#13B7CC]' : 'bg-[#13B7CC] text-white' }`}>Next
+            <button onClick={onNext} type='button' disabled={!selectedClass} className={`flex items-center gap-4 px-8 py-3 rounded-2xl transition ${selectedClass ? 'bg-white text-[#13B7CC]' : 'bg-[#13B7CC] text-white cursor-pointer' }`}>Next
                 <MdNavigateNext className='text-lg' />
             </button>
         </div>

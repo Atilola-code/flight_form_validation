@@ -21,7 +21,7 @@ export default function StepOne({ onNext, currentStep }: stepOneProps) {
   } = useFormContext();
 
   return (
-    <div className="w-full px-4 text-center">
+    <div className="w-full px-4 text-center py-8">
       <h1 className="text-5xl text-white font-semibold">
         Search Flights, Cheapest Flights
       </h1>
@@ -32,11 +32,11 @@ export default function StepOne({ onNext, currentStep }: stepOneProps) {
       {/* Progress indicator */}
       <ProgressIndicator currentStep={currentStep} />
 
-      <form className="">
-        <div className="space-y-6">
-          <div className="md:grid-cols-2 grid">
+      <form>
+        <div>
+          <div className="md:grid-cols-2 grid gap-x-6">
             <div className="relative">
-              <label className="flex text-lg ml-10 text-white/80 gap-2">
+              <label className="flex text-lg text-white/80 gap-2">
                 <RiFlightTakeoffLine className="text-xl" />
                 From
               </label>
@@ -48,7 +48,7 @@ export default function StepOne({ onNext, currentStep }: stepOneProps) {
                 placeholder="Country, city or airport"
                 className="w-full p-3 rounded-2xl focus:outline-none text-[#888] bg-white"
               />
-              <RiSearchLine className="absolute right-16 top-3/5 -translate-y-1/4 text-[#888] mr-4 text-lg" />
+              <RiSearchLine className="absolute right-4 top-3/5 -translate-y-1/4 text-[#888] mr-4 text-lg" />
 
               {errors.from && (
                 <p className="text-red-400 text-sm mt-1">
@@ -58,7 +58,7 @@ export default function StepOne({ onNext, currentStep }: stepOneProps) {
             </div>
 
             <div className="relative">
-              <label className="flex gap-2 ml-10 text-lg text-white/80 ">
+              <label className="flex gap-2  text-lg text-white/80 ">
                 <RiFlightLandLine className="text-xl" />
                 To
               </label>
@@ -68,7 +68,7 @@ export default function StepOne({ onNext, currentStep }: stepOneProps) {
                 placeholder="Country, city or airport"
                 className="w-full p-3 rounded-2xl focus:outline-none bg-white text-[#888]"
               />
-              <RiSearchLine className="absolute right-16 top-3/5 -translate-y-1/4 text-[#888] text-lg mr-4" />
+              <RiSearchLine className="absolute right-4 top-3/5 -translate-y-1/4 text-[#888] text-lg mr-4" />
               {errors.to && (
                 <p className="text-red-400 text-sm mt-1">
                   {errors.to.message as string}
@@ -112,7 +112,7 @@ export default function StepOne({ onNext, currentStep }: stepOneProps) {
         <button
           onClick={onNext}
           type="button"
-          className="inline-flex text-center gap-4 bg-[#13B7CC] text-white px-10 py-2 rounded-2xl hover:text-[#13B7CC] hover:bg-white transition cursor-pointer"
+          className="flex text-center gap-4 bg-[#13B7CC] text-white px-8 py-3 rounded-2xl hover:text-[#13B7CC] hover:bg-white transition cursor-pointer"
         >
           Next
           <MdNavigateNext className="text-2xl text-white hover:text-[#13B7CC] cursor-pointer" />

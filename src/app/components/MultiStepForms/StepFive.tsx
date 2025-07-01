@@ -39,15 +39,15 @@ export default function StepFive({  onBack, currentStep}: StepFiveProps) {
                 <BiHomeHeart className='text-5xl mb-3'/>
                 <span className='text-2xl font-medium mb-2'>Foundation</span>
             </div>
-            <div onClick={() => handleSelect("Foundation")} className={`flex flex-col items-center justify-center p-6 rounded-lg cursor-pointer transition shadow-lg ${selectedClass === 'Foundation' ? "bg-[#13B7CC] text-white" : "text-white/30 bg-white/10"}`}>
+            <div onClick={() => handleSelect("Orphanage")} className={`flex flex-col items-center justify-center p-6 rounded-lg cursor-pointer transition shadow-lg ${selectedClass === 'Orphanage' ? "bg-[#13B7CC] text-white" : "text-white/30 bg-white/10"}`}>
                 <BsGlobe2 className='text-5xl mb-3'/>
                 <span className='text-2xl font-medium mb-2'>Foundation</span>
             </div>
-            <div onClick={() => handleSelect("Foundation")} className={`flex flex-col items-center justify-center p-6 rounded-lg cursor-pointer transition shadow-lg ${selectedClass === 'Foundation' ? "bg-[#13B7CC] text-white" : "text-white/30 bg-white/10"}`}>
+            <div onClick={() => handleSelect("Motherless")} className={`flex flex-col items-center justify-center p-6 rounded-lg cursor-pointer transition shadow-lg ${selectedClass === 'Motherless' ? "bg-[#13B7CC] text-white" : "text-white/30 bg-white/10"}`}>
                 <LuHandshake className='text-5xl mb-3'/>
                 <span className='text-2xl font-medium mb-2'>Foundation</span>
             </div>
-            <div onClick={() => handleSelect("Foundation")} className={`flex flex-col items-center justify-center p-6 rounded-lg cursor-pointer transition shadow-lg ${selectedClass === 'Foundation' ? "bg-[#13B7CC] text-white" : "text-white/30 bg-white/10"}`}>
+            <div onClick={() => handleSelect("Less-privilege")} className={`flex flex-col items-center justify-center p-6 rounded-lg cursor-pointer transition shadow-lg ${selectedClass === 'Less-privilege' ? "bg-[#13B7CC] text-white" : "text-white/30 bg-white/10"}`}>
                 <PiWheelchairBold className='text-5xl mb-3'/>
                 <span className='text-2xl font-medium mb-2'>Foundation</span>
             </div>
