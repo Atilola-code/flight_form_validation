@@ -11,7 +11,7 @@ type StepThreeProps = {
 }
 export default function StepThree({ onNext, onBack, currentStep }: StepThreeProps) {
   return (
-    <div className='w-full px-4 text-center'>
+    <div className='w-full text-center'>
       <h1 className='text-5xl text-white font-semibold'>Search Flights, Cheapest Flights</h1>
               <p className='text-white/60 font-light text-3xl mt-2 mb-16'>All the plane tickets you are looking for together!</p>
       
