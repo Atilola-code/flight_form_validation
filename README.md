@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  Flight Booking Multi-Step Form
 
-## Getting Started
+A responsive, modern multi-step flight booking form built with **React**, **Next.js**, **TypeScript**, **Tailwind CSS**, and **React Hook Form**. 
+The form allows users to search flights, select preferences, view ticket information, and proceed through multiple steps with a visual progress indicator — closely styled to a Figma prototype.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📸 Preview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> ![Project Screenshot](./public/preview.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Features
 
-## Learn More
+- 🔵 **Multi-step form navigation**
+- 🎛️ **Progress indicator with icons and connecting lines**
+- ✅ **Form validation with React Hook Form**
+- 📄 **Dynamic ticket information table**
+- 🌗 **Fully responsive design with Tailwind CSS**
+- 🖼️ **Styled closely based on a Figma design prototype**
+- 📱 **Mobile-friendly horizontal scrolling table**
+- ✨ Clean, modern UI and UX
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Technologies Used
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [Figma](https://www.figma.com/) (for design reference)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Atilola-code/flight_form_validation.git
+   cd flight-booking-multistep-form
