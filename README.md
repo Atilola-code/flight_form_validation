@@ -40,5 +40,5 @@ The form allows users to search flights, select preferences, view ticket informa
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/atilola-code/flight-booking-multistep-form.git
+   git clone https://github.com/Atilola-code/flight_form_validation.git
    cd flight-booking-multistep-form
