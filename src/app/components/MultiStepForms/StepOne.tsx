@@ -84,7 +84,7 @@ export default function StepOne({ onNext, currentStep }: stepOneProps) {
                 Depart date
               </label>
               <input
-                type="date-time"
+                type="datetime"
                 {...register("departDate")}
                 placeholder="Select date"
                 className="bg-white text-[#888] w-full p-3 rounded-2xl focus:outline-none "
@@ -93,8 +93,7 @@ export default function StepOne({ onNext, currentStep }: stepOneProps) {
             </div>
             <div className="relative">
               <label className="flex text-lg gap-2 text-white/80">
-                <RiCalendar2Line className="text-xl text-white/80" />
-                Return date
+                <RiCalendar2Line className="text-xl text-white/80" />Return date
               </label>
               <input
                 type="datetime"

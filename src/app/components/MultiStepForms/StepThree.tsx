@@ -53,7 +53,7 @@ export default function StepThree({ onNext, onBack, currentStep }: StepThreeProp
           type='button'
           className=' flex items-center px-8 py-3 gap-4 bg-white text-[#13B7CC] border border-[#13B7CC] rounded-2xl hover:bg-[#13B7CC] hover:text-white transition cursor-pointer'
         >
-            <IoIosArrowBack className='text-lg '/> Back
+            <IoIosArrowBack className='text-2xl '/> Back
         </button>
 
         <button
@@ -61,7 +61,7 @@ export default function StepThree({ onNext, onBack, currentStep }: StepThreeProp
           type='button'
           className=' flex items-center px-8 py-3 gap-4 bg-[#13B7CC] text-white rounded-2xl hover:bg-white hover:text-[#13B7CC] border border-[#13B7CC] transition cursor-pointer'
         >Next
-        <MdNavigateNext className='text-lg' />
+        <MdNavigateNext className='text-2xl' />
         </button>
       </div>
     </div>
